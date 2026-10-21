@@ -1,0 +1,27 @@
+4.
+URL completa	http://127.0.0.1:5500/index.html
+Protocolo	HTTP
+Host	127.0.0.1
+Puerto	5500
+Ruta	/index.html
+Método de la petición	GET
+Código de estado	304 Not Modified
+
+-------------------
+
+5-    Al solicitar la ruta /promociones.html, el servidor respondió con el código HTTP 404 Not Found. Este código indica que el recurso solicitado no se encontró en la ruta especificada. La prueba permite comprobar cómo responde el servidor cuando el navegador solicita una página que no está disponible.
+
+--------
+
+6.HTML, CSS y JavaScript cumplen funciones complementarias en el desarrollo del sitio web de Rueda Libre.
+
+    HTML proporciona la estructura y el contenido, como los títulos, los textos y los botones.
+    Ejemplo en Rueda Libre: crear el título principal del negocio y un mensaje de bienvenida para los visitantes.
+    
+    CSS define el diseño visual, los colores y la distribución de los elementos.
+    Ejemplo en Rueda Libre: utilizar colores verdes, centrar el título y mejorar la presentación del mensaje de bienvenida.
+    
+    JavaScript agrega interactividad y permite responder a las acciones de los visitantes.
+    Ejemplo en Rueda Libre: mostrar un mensaje cuando un visitante haga clic en un botón para consultar información sobre el alquiler de bicicletas.
+
+
