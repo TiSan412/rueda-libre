@@ -23,5 +23,24 @@ Código de estado	304 Not Modified
     
     JavaScript agrega interactividad y permite responder a las acciones de los visitantes.
     Ejemplo en Rueda Libre: mostrar un mensaje cuando un visitante haga clic en un botón para consultar información sobre el alquiler de bicicletas.
+    
+    --------------------------------------------
+6.
 
+index.html	Inicio	index.html
+index.html	Tarifas y rutas	paginas/tarifas.html
+index.html	Reservas	paginas/reservas.html
+paginas/tarifas.html	Inicio	../index.html
+paginas/tarifas.html	Tarifas y rutas	tarifas.html
+paginas/tarifas.html	Reservas	reservas.html
+paginas/reservas.html	Inicio	../index.html
+paginas/reservas.html	Tarifas y rutas	tarifas.html
+paginas/reservas.html	Reservas	reservas.html    
+
+*Comprobación*	*Resultado*
+Enlaces del menú probados	9 / 9
+Errores 404 en documentos HTML	0
+Errores 404 en imágenes 0
+Enlaces «Reservar ahora» comprobados	Sí
+Navegación entre las tres páginas	Correcta
 
