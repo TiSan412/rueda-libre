@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="description"
-        content="Reserva tu bicicleta con Rueda Libre en Medellín. Consulta nuestro horario de atención y contáctanos por correo electrónico."
-    >
+    <meta name="description"
+        content="Reserva tu bicicleta con Rueda Libre en Medellín. Consulta nuestro horario de atención y contáctanos por correo electrónico.">
 
     <title>Reserva tu bicicleta | Rueda Libre Medellín</title>
 </head>
+
 <body>
 
     <header>
@@ -58,8 +58,71 @@
 
             <p>
                 <em>Los horarios son ilustrativos y deben confirmarse
-                antes de visitar el establecimiento.</em>
+                    antes de visitar el establecimiento.</em>
             </p>
+
+            <form action="">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <label for="nombre_completo">Nombre:</label>
+                    <input id="nombre_completo" type="text" required placeholder="ingrese su nombre completo">
+                    <label for="nro_doc">Número de documento:</label>
+                    <input id="nro_doc" type="text" required>
+                    <label for="mail">Correo electrónico:</label>
+                    <input id="mail" type="email" required placeholder="correo@ejemplo.com">
+                    <label for="phone">Celular</label>
+                    <input id="phone" type="text" required>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Datos de Alquiler</legend>
+                    <label for="Rent_date">Fecha de alquiler</label>
+                    <input id="Rent_date" type="date" required>
+                    <label for="bycicle">Tipo de Bicicleta</label>
+                    <select>
+                        <option value="Urb">Urbana</option>
+                        <option value="Mon">Montaña</option>
+                        <option value="Ele">Eléctrica</option>
+                    </select>
+
+                    <label for="Time">Plan</label>
+                    <select>
+                        <option value="1">1 Hora</option>
+                        <option value="2">Medio día</option>
+                        <option value="3">Día completo</option>
+                    </select>
+                <label for="Cantidad">Cantidad de Bicicletas</label>
+                    <input id="Cantidad" type="number" required>
+                    <label for="rutas">Recorrido</label>
+                    <input id="rutas" type="radio" required>
+
+                    <p>Recorrido Guiado:</p>
+
+                    <label for="ruta0">Libre</label>
+                    <input id="ruta0" type="radio" name="ruta" required>
+
+                    <label for="ruta1">Ruta 1</label>
+                    <input id="ruta2" type="radio" name="ruta">
+
+                    <label for="ruta2">Ruta 2</label>
+                    <input id="ruta2" type="radio" name="ruta">
+
+                    <label for="ruta3">Ruta 3</label>
+                    <input id="ruta3" type="radio" name="ruta">
+
+                    <label for="comments">Comentarios</label>
+                    <textarea id="comments" name="textarea" rows="10" cols="70"></textarea>
+
+                </fieldset>
+
+                <label for="t&c">Terminos y condiciones</label>
+                <input type="checkbox" required id="t&c">
+
+                <button type="submit">Enviar respuesta</button>
+            </form>
+
+
         </section>
     </main>
 
@@ -76,4 +139,5 @@
     </footer>
 
 </body>
+
 </html>
