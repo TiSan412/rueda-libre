@@ -9,6 +9,15 @@
         content="Reserva tu bicicleta con Rueda Libre en Medellín. Consulta nuestro horario de atención y contáctanos por correo electrónico.">
 
     <title>Reserva tu bicicleta | Rueda Libre Medellín</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -67,18 +76,21 @@
                     <label for="nombre_completo">Nombre:</label>
                     <input id="nombre_completo" minlenght="3" type="text" required placeholder="mín. 3 caracteres.">
                     <label for="nro_doc">Número de documento:</label>
-                    <input id="nro_doc" type="text" inputmode="numeric" pattern="[0-9]{6,10}" minlength="6" maxlength="10" autocomplete="off" title="Ingrese entre 6 y 10 dígitos numéricos" required>
+                    <input id="nro_doc" type="text" inputmode="numeric" pattern="[0-9]{6,10}" minlength="6"
+                        maxlength="10" autocomplete="off" title="Ingrese entre 6 y 10 dígitos numéricos" required>
                     <label for="mail">Correo electrónico:</label>
-                    <input id="mail" type="email" title="Ingrese una dirección de correo válida" required placeholder="correo@ejemplo.com">
+                    <input id="mail" type="email" title="Ingrese una dirección de correo válida" required
+                        placeholder="correo@ejemplo.com">
                     <label for="phone">Celular</label>
-                    <input id="phone" type="text" inputmode="numeric"   pattern="3[0-9]{9}" minlength="10" maxlength="10" autocomplete="tel" required>
+                    <input id="phone" type="text" inputmode="numeric" pattern="3[0-9]{9}" minlength="10" maxlength="10"
+                        autocomplete="tel" required>
 
                 </fieldset>
 
                 <fieldset>
                     <legend>Datos de Alquiler</legend>
                     <label for="Rent_date">Fecha de alquiler</label>
-                    <input id="Rent_date" type="date" min="2026-11-01"  max="2026-12-31" required>
+                    <input id="Rent_date" type="date" min="2026-11-01" max="2026-12-31" required>
                     <label for="bycicle">Tipo de Bicicleta</label>
                     <select id="bicicleta" name="bicicleta" required>
                         <option value="Urb">Urbana</option>
@@ -92,7 +104,7 @@
                         <option value="2">Medio día</option>
                         <option value="3">Día completo</option>
                     </select>
-                <label for="Cantidad">Cantidad de Bicicletas</label>
+                    <label for="Cantidad">Cantidad de Bicicletas</label>
                     <input id="Cantidad" type="number" required>
                     <label for="rutas">Recorrido</label>
                     <input id="rutas" type="radio" min="1" max="6" step="1" inputmode="numeric" required>
@@ -112,7 +124,7 @@
                     <input id="ruta3" type="radio" name="ruta">
 
                     <label for="comments">Comentarios</label>
-                    <textarea id="comments" name="textarea"  maxlength="300"   rows="4" cols="70"></textarea>
+                    <textarea id="comments" name="textarea" maxlength="300" rows="4" cols="70"></textarea>
 
                 </fieldset>
 

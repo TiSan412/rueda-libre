@@ -1,0 +1,23 @@
+:root {
+--botones-y-enlaces:#1E7A4F;
+--Destacados-y-botones-secundarios:#FC9D14;
+--Titulos-y-encabezado:#14213D;
+--Fondo-general:#FAF6EF;
+--Texto-secundario:#5B6470;
+--fuenteMonts:"Montserrat", sans-serif;
+--fuenteOpenSans:"Open Sans", sans-serif;
+--espaciadotiny:0.5rem;
+--espaciadomedium:1.0rem;
+--espaciadobig:1.5rem;
+}
+
+main{
+font-family: var(--fuenteOpenSans);
+color: var(--Texto-secundario);
+background-color: var(--Fondo-general);
+}
+
+h1,h2,h3,h4,h5,h6{
+font-family: var(--fuenteMonts);
+}
+
