@@ -21,3 +21,32 @@ h1,h2,h3,h4,h5,h6{
 font-family: var(--fuenteMonts);
 }
 
+
+
+#menu a { 
+color: white; 
+}
+
+.activo { 
+color: var(--Destacados-y-botones-secundarios); font-weight: 600; 
+}
+
+#menu{
+    background-color: #1E7A4F;
+}
+ul a:hover{
+background-color:#1D8F7C;
+font-weight: bold;
+}
+
+*:focus{
+padding: var(--espaciadotiny);
+outline:solid var(--Destacados-y-botones-secundarios);
+border-radius: 20px;
+}
+
+.reservar{
+background-color: var(--botones-y-enlaces);
+outline: white;
+border-radius: 20px;
+}
