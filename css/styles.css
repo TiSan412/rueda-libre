@@ -1,109 +1,266 @@
-*{
+/* Rueda Libre — estilos globales */
+:root {
+    --botones-y-enlaces: #1E7A4F;
+    --destacados-y-botones-secundarios: #FC9D14;
+    --titulos-y-encabezado: #14213D;
+    --fondo-general: #FAF6EF;
+    --texto-secundario: #5B6470;
+    --fuente-monts: "Montserrat", sans-serif;
+    --fuente-open-sans: "Open Sans", sans-serif;
+    --espaciado-tiny: 0.5rem;
+    --espaciado-medium: 1rem;
+    --espaciado-big: 1.5rem;
+}
+
+/* 1. El ancho declarado incluye padding y borde. */
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
-:root {
---botones-y-enlaces:#1E7A4F;
---Destacados-y-botones-secundarios:#FC9D14;
---Titulos-y-encabezado:#14213D;
---Fondo-general:#FAF6EF;
---Texto-secundario:#5B6470;
---fuenteMonts:"Montserrat", sans-serif;
---fuenteOpenSans:"Open Sans", sans-serif;
---espaciadotiny:0.5rem;
---espaciadomedium:1.0rem;
---espaciadobig:1.5rem;
+html {
+    font-size: 100%;
 }
 
-main{
-max-width: 70rem;
-margin: 0 auto;
-padding: 1rem;
-font-family: var(--fuenteOpenSans);
-color: var(--Texto-secundario);
-background-color: var(--Fondo-general);
+body {
+    margin: 0;
+    color: var(--texto-secundario);
+    background: var(--fondo-general);
+    font-family: var(--fuente-open-sans);
+    line-height: 1.6;
 }
 
-h1,h2,h3,h4,h5,h6{
-font-family: var(--fuenteMonts);
+h1, h2, h3, h4, h5, h6 {
+    color: var(--titulos-y-encabezado);
+    font-family: var(--fuente-monts);
+    line-height: 1.2;
 }
 
-
-
-#menu a { 
-display: flex;
-gap: 1.5rem;
-flex-wrap: wrap;
-color: white; 
+/* 2. Contenido centrado y portada con altura relativa a la ventana. */
+main {
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: var(--espaciado-big) var(--espaciado-medium);
+    background: var(--fondo-general);
 }
 
-.activo { 
-color: var(--Destacados-y-botones-secundarios); font-weight: 600; 
+header {
+    padding: var(--espaciado-big) var(--espaciado-medium);
+    text-align: center;
+    background: var(--titulos-y-encabezado);
+    color: #fff;
 }
 
-#menu{
-    background-color: #1E7A4F;
-}
-ul a:hover{
-background-color:#1D8F7C;
-font-weight: bold;
+header h1,
+header p {
+    color: #fff;
 }
 
-*:focus{
-padding: var(--espaciadotiny);
-outline:solid var(--Destacados-y-botones-secundarios);
-border-radius: 20px;
+body > header {
+    min-height: 70vh;
 }
 
-.reservar{
-background-color: var(--botones-y-enlaces);
-outline: white;
-border-radius: 20px;
+header > img {
+    display: block;
+    width: min(100%, 42rem);
+    height: auto;
+    margin: var(--espaciado-medium) auto;
+    border-radius: 0.75rem;
 }
 
-table{
-width: 100%;
-border-collapse: collapse;
+/* 6. Opciones del menú en una fila. */
+nav ul,
+#menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--espaciado-big);
+    margin: 0;
+    padding: var(--espaciado-medium);
+    list-style: none;
+    background: var(--botones-y-enlaces);
 }
 
-th,td {
+#menu a,
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#menu a {
+    display: inline-block;
+    padding: var(--espaciado-tiny) var(--espaciado-medium);
+    border-radius: 0.4rem;
+}
+
+#menu a:hover,
+#menu a:focus-visible {
+    background: #155b3a;
+    text-decoration: underline;
+}
+
+#menu a.activo {
+    color: #fff;
+    background: #155b3a;
+    font-weight: 700;
+    outline: 2px solid #fff;
+}
+
+a {
+    color: var(--botones-y-enlaces);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--destacados-y-botones-secundarios);
+    outline-offset: 2px;
+}
+
+/* 3. Servicios como tarjetas; las imágenes ocupan el 100% del ancho. */
+#nuestros-servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+    gap: var(--espaciado-big);
+}
+
+#nuestros-servicios > h2 {
+    grid-column: 1 / -1;
+}
+
+#nuestros-servicios article {
+    width: 100%;
+    padding: var(--espaciado-medium);
+    border: 1px solid #d6d0c7;
+    border-radius: 0.75rem;
+    background: #fff;
+    box-shadow: 0 0.2rem 0.7rem rgb(20 33 61 / 8%);
+}
+
+#nuestros-servicios article img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+/* 4. Tablas legibles y encabezados con contraste suficiente. */
+table {
+    width: 100%;
+    margin: var(--espaciado-medium) 0 var(--espaciado-big);
+    border-collapse: collapse;
+    background: #fff;
+}
+
+caption {
+    padding: var(--espaciado-tiny);
+    font-weight: 700;
+    text-align: left;
+}
+
+th,
+td {
     padding: 0.75rem;
-    border: 1px solid var(--Destacados-y-botones-secundarios)
-    text-align:left;
+    border: 1px solid #b9c0c8;
+    text-align: left;
 }
 
-th {
-    background-color: #1f3a5f
-    color: white;
+thead th {
+    color: #fff;
+    background: var(--botones-y-enlaces);
 }
 
+tbody th {
+    color: var(--titulos-y-encabezado);
+    background: #e9eee9;
+}
+
+/* 5. Formulario vertical, con controles de ancho completo. */
 form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: var(--espaciado-big);
+}
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaciado-tiny);
+    min-width: 0;
+    padding: var(--espaciado-medium);
+    border: 1px solid #b9c0c8;
+    border-radius: 0.75rem;
 }
 
 form label {
     display: block;
-    margin-bottom: 0.4rem;
+    margin-top: var(--espaciado-tiny);
+    font-weight: 600;
 }
 
-form input,
+form input:not([type="checkbox"]):not([type="radio"]),
 form textarea,
 form select {
+    display: block;
     width: 100%;
+    max-width: 100%;
     padding: 0.75rem;
+    border: 1px solid #8b949e;
+    border-radius: 0.35rem;
+    font: inherit;
 }
 
-form button {
+form input[type="checkbox"],
+form input[type="radio"] {
+    width: auto;
+    align-self: flex-start;
+}
+
+form button,
+.reservar {
+    display: inline-block;
+    width: fit-content;
     padding: 1rem 1.5rem;
+    border: 0;
+    border-radius: 0.5rem;
+    color: #fff;
+    background: var(--botones-y-enlaces);
+    font: inherit;
+    font-weight: 700;
+    text-decoration: none;
     cursor: pointer;
 }
 
-nav ul {
-    display: flex;
-    flex-direction: row;
-    gap: 1.5rem;
-    list-style: none;
-    padding: 0;
+form button:hover,
+.reservar:hover {
+    background: #155b3a;
+}
+
+footer {
+    padding: var(--espaciado-big) var(--espaciado-medium);
+    color: #fff;
+    background: var(--titulos-y-encabezado);
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+}
+
+@media (max-width: 40rem) {
+    body > header {
+        min-height: 60vh;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
 }

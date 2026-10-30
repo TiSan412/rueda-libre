@@ -74,7 +74,7 @@
                 <fieldset>
                     <legend>Datos Personales</legend>
                     <label for="nombre_completo">Nombre:</label>
-                    <input id="nombre_completo" minlenght="3" type="text" required placeholder="mín. 3 caracteres.">
+                    <input id="nombre_completo" minlength="3" type="text" required placeholder="mín. 3 caracteres.">
                     <label for="nro_doc">Número de documento:</label>
                     <input id="nro_doc" type="text" inputmode="numeric" pattern="[0-9]{6,10}" minlength="6"
                         maxlength="10" autocomplete="off" title="Ingrese entre 6 y 10 dígitos numéricos" required>
@@ -91,14 +91,14 @@
                     <legend>Datos de Alquiler</legend>
                     <label for="Rent_date">Fecha de alquiler</label>
                     <input id="Rent_date" type="date" min="2026-11-01" max="2026-12-31" required>
-                    <label for="bycicle">Tipo de Bicicleta</label>
+                    <label for="bicicleta">Tipo de Bicicleta</label>
                     <select id="bicicleta" name="bicicleta" required>
                         <option value="Urb">Urbana</option>
                         <option value="Mon">Montaña</option>
                         <option value="Ele">Eléctrica</option>
                     </select>
 
-                    <label for="Time">Plan</label>
+                    <label for="plan">Plan</label>
                     <select id="plan" name="plan" required>
                         <option value="1">1 Hora</option>
                         <option value="2">Medio día</option>
@@ -106,16 +106,13 @@
                     </select>
                     <label for="Cantidad">Cantidad de Bicicletas</label>
                     <input id="Cantidad" type="number" required>
-                    <label for="rutas">Recorrido</label>
-                    <input id="rutas" type="radio" min="1" max="6" step="1" inputmode="numeric" required>
-
-                    <p>Recorrido Guiado:</p>
+                    <p>Recorrido guiado:</p>
 
                     <label for="ruta0">Libre</label>
                     <input id="ruta0" type="radio" name="ruta" required>
 
                     <label for="ruta1">Ruta 1</label>
-                    <input id="ruta2" type="radio" name="ruta">
+                    <input id="ruta1" type="radio" name="ruta">
 
                     <label for="ruta2">Ruta 2</label>
                     <input id="ruta2" type="radio" name="ruta">
