@@ -264,3 +264,58 @@ footer a {
         white-space: nowrap;
     }
 }
+
+.tarjeta-servicio {
+    position: relative;
+    padding: var(--espaciadomedium);
+    border: 1px solid var(--Titulos-y-encabezado);
+    border-radius: 12px;
+    margin-bottom: var(--espaciadobig);
+}
+
+.etiqueta-nuevo {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background-color: var(--botones-y-enlaces);
+    color: white;
+    padding: var(--espaciadotiny);
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.tarjeta-servicio img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.whatsapp-flotante {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+
+    background-color: #25D366;
+    color: white;
+
+    padding: 1rem 1.5rem;
+    border-radius: 30px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    z-index: 1000;
+}
+
+main {
+    padding-bottom: 5rem;
+}
+
+footer {
+    padding-bottom: 5rem;
+}
+
+.whatsapp-flotante:hover {
+    background-color: #1da851;
+}
