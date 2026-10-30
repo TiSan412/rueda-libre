@@ -77,12 +77,11 @@ nav ul,
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    gap: var(--espaciado-big);
-    margin: 0;
-    padding: var(--espaciado-medium);
+    gap: 1.5rem;
     list-style: none;
-    background: var(--botones-y-enlaces);
+    padding: 0;
+    margin: 0;
+
 }
 
 #menu a,
@@ -318,4 +317,27 @@ footer {
 
 .whatsapp-flotante:hover {
     background-color: #1da851;
+}
+
+#encabezado-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--espaciado-medium);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.footer-bloque {
+    flex: 1;
+    min-width: 200px;
 }
